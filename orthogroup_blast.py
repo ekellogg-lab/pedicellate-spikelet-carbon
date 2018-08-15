@@ -4,7 +4,7 @@ This script takes the tab delimited output of orthofinder and Themeda transcript
 if the best it is one of the sorghum genes of interest included in a csv the themeda genes are recorded along with the best sorghum match.
 fasta files for the themeda and sobic cds are required
 usage
-python orthogroup_blast.py orthogroup_file.txt sobig_genes.csv cds_themeda.fa cds_sobic.fa > out.csv
+python orthogroup_blast.py orthogroup_file.txt sobic_genes.csv cds_themeda.fa cds_sobic.fa > out.csv
 """
 
 import sys
