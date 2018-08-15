@@ -6,6 +6,7 @@ gtf2csv.py takes the gtf output of stringtie and reformats it as a csv with the 
 gene_name,coverage,FPKM,TPM
 
 usage
+
 python gtf2csv input.gtf > output.csv
 
 -------------------------
@@ -14,6 +15,7 @@ EC_values_of_all_sorghum_genes.txt should contain the gene ID in column 1 and EC
 We used Sbicolor_454_v3.1.1.annotation_info.txt from Phytozome 12.
 
 usage
+
 python sobic_EC_list.py input_TPM.csv EC_values_to_keep.csv EC_values_of_all_sorghum_genes.txt > output.csv
 
 
@@ -27,5 +29,7 @@ cds of all Sorghum bicolor and Themeda triandria genes in fasta format
 blast+
 
 usage
+
 python orthogroup_blast.py orthogroup_file.txt sobic_genes.csv cds_themeda.fa cds_sobic.fa > output.csv
+
 -------------------------
