@@ -92,7 +92,7 @@ with open(orthofile,'r') as f:
 					x = [TT]
 
 					make_fasta(x,fasta_TT,"TT_temp.fa") #make temp themeda fasta
-					command1 = "blastp -query TT_temp.fa -db sobic_temp.fa -outfmt 6 -max_target_seqs 1 -out blast_temp.out" # blast comand 
+					command1 = "blastp -query TT_temp.fa -db sobic_temp.fa -outfmt 6 -max_target_seqs 1 -out blast_temp.out" # blast command 
 					subprocess.call(command1,shell=True)
 					with open('blast_temp.out', 'r')as f: #check blast output
 						for line in f:
